@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // resete inicial da página onde eu removo todas as configurações de espaçamento padrão da página
+}
+
+body{
+    background-color: #EFEEF3; // cor do nosso site
+    font-family: Kodchasan, sans-serif; // fonte do nosso site
+   
+}
+
+.cabecalho{
+    display: flex; // posiciono os itens lado a lado
+    justify-content: space-between; // alinhamento dos intens com um espaçamento entre eles
+    align-items: center; // alinhamento dos itens ao centro da página
+    margin: 12px; // define o espaçamento externo da página
+
+    @media (max-width: 500px){ // Confifuração essencial para a responsividade de nosso site para dispositivos de até 600px de largura
+            display: flex;
+            flex-direction: column;
+            margin: 5px 0;
+        }
+    }
+
+    img{
+        @media (max-width: 500px){ 
+            margin: 30px;
+            height: 10vh;
+        }
+    }
+  
+
+    ul{
+        font-size: x-large; // tamanho da letra
+        font-style: bold; // peso da letra, como se fosse uma espessura da letra
+
+        @media (max-width: 500px){ 
+            margin: 10px 10px;
+        }
+    }
+
+
+main{
+
+    img{
+        width: 100vw; // tamanho da imagem 
+    }
+
+    @media (max-width: 500px){ 
+        img{
+            display: none;
+        }
+    }
+
+}
+
+.conteudoCentral{
+    display: flex; // posiciono os itens lado a lado
+    align-items: center; // alinhamento dos itens ao centro da página
+    margin: 60px 100px; // cria um espaçamento vertical de 20px em relação a página e um espaçamento horizontal de 100px
+
+
+    @media (max-width: 600px){
+        display: flex;
+        flex-direction: column;
+
+   
+    
+    }
+
+    img {
+        height: 45vh;
+
+    }
+       
+    h1{
+        border: firebrick ;
+        display: flex; // posiciono os itens lado a lado
+        justify-content: center; // alinho os conteúdos na posição central da página
+        font-size: xx-large ; // tamanho da letra
+        font-weight: 400; // peso da letra, como se fosse uma espessura da letra
+        padding-top: 10px; // define o espaçamento interno da página    
+    }
+
+    p{
+        display: flex; // posiciono os itens lado a lado
+        text-align: center; // posicionamento do texto ao centro
+        font-size: larger;  // tamanho da letra
+        margin: 3% 25%; // define um espaçamento externo da página (cima e baixo), (direita e esquerda)
+        font-weight: 300;  // peso da letra, como se fosse uma espessura da letra
+    }
+}   
+
+.conteudoFinal{ //estilização do conteúdo final do nosso site
+    display: flex; // posiciono os itens lado a lado
+    justify-content: space-around; // crio um espaçamento em torno os itens
+    align-items: center; // alinhamento dos itens ao centro da página
+    margin: 20px; // acrescentei um espaçamento entre os itens desse conteúdo e as imagens para que não ficasse muito colado
+
+    
+    h2{
+        margin: 8%; // adiciono uma margem entre o texto para que fique encaixado no modelo do nosso site
+        font-size: xx-large; // tamanho da letra
+        font-weight: 400; // peso da letra, como se fosse uma espessura da letra
+    }
+
+    img{
+        display: flex; // coloco as imagens lado a lado
+
+    }
+}
